@@ -384,8 +384,12 @@ namespace TownOfUs
                     target.myTasks.Insert(0, importantTextTask);
                 }
 
-                killer.MyPhysics.StartCoroutine(killer.KillAnimations.Random<KillAnimation>()
-                    .CoPerformKill(killer, target));
+                if (CustomGameOptions.ShowKillAnimation)
+                {
+                    killer.MyPhysics.StartCoroutine(killer.KillAnimations.Random<KillAnimation>()
+                        .CoPerformKill(killer, target));
+                }
+
                 var deadBody = new DeadPlayer
                 {
                     PlayerId = target.PlayerId,

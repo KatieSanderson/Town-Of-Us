@@ -59,6 +59,7 @@ namespace TownOfUs.CustomOption
         public static CustomToggleOption MeetingColourblind;
         public static CustomToggleOption ImpostorSeeRoles;
         public static CustomToggleOption DeadSeeRoles ;
+        public static CustomToggleOption ShowKillAnimation ;
         public static CustomNumberOption MaxImpostorRoles ;
         public static CustomNumberOption MaxNeutralRoles ;
         public static CustomToggleOption RoleUnderName;
@@ -228,6 +229,9 @@ namespace TownOfUs.CustomOption
 
 			DeadSeeRoles =
 				new CustomToggleOption(num++, "Dead can see everyone's roles", false);
+
+			ShowKillAnimation =
+				new CustomToggleOption(num++, "Show kill animation", true);
 
 			MaxImpostorRoles =
 				new CustomNumberOption(num++, "Max Impostor Roles", 1f, 1f, 3f, 1f);

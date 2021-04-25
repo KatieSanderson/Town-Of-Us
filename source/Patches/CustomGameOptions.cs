@@ -105,7 +105,9 @@ namespace TownOfUs
 
         public static bool ImpostorSeeRoles => Generate.ImpostorSeeRoles.Get();
         public static bool DeadSeeRoles => Generate.DeadSeeRoles.Get();
-        
+
+        public static bool ShowKillAnimation => Generate.ShowKillAnimation.Get();
+
         public static float DouseCd => Generate.DouseCooldown.Get();
         public static bool ArsonistGameEnd => Generate.ArsonistGameEnd.Get();
 
